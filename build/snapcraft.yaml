@@ -1,0 +1,17 @@
+name: jx 
+version: v1.3.380
+summary: Jenkins X 
+description: Jenkins X is a CI / CD platform for Kubernetes.
+
+confinement: classic 
+grade: stable
+
+apps:
+  jx:
+    command: jx 
+
+parts:
+  jx:
+    plugin: dump 
+    source: https://github.com/jenkins-x/jx/releases/download/v1.3.380/jx-linux-amd64.tar.gz
+    source-type: tar 
